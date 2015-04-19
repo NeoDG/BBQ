@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/pm_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:singleLine="true"
+        android:text="@string/pm_name" />
+
+    <TextView
+        android:id="@+id/pm_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pm_name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:singleLine="true"
+        android:text="@string/pm_time" />
+
+    <TextView
+        android:id="@+id/pm_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm_time"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/pm_detail"
+        android:textColor="@color/trans_black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_me_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pm_detail"
+        android:background="@null"
+        android:onClick="replyMessage"
+        android:text="@string/reply"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_chat"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_1chat"
+            android:text="@string/part_chat" />
+
+        <Button
+            android:id="@+id/btn_secret"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_2secret"
+            android:text="@string/part_secret" />
+
+        <Button
+            android:id="@+id/btn_suround"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_3suround"
+            android:text="@string/part_suround" />
+
+        <Button
+            android:id="@+id/btn_circle"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_4circle"
+            android:text="@string/part_circle" />
+
+        <Button
+            android:id="@+id/btn_lostfound"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_5lostfound"
+            android:text="@string/part_lostfound" />
+
+        <Button
+            android:id="@+id/btn_sale"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_6sale"
+            android:text="@string/part_sale" />
+
+        <Button
+            android:id="@+id/btn_ask"
+            style="@style/PartStyle"
+            android:drawableLeft="@drawable/part_7ask"
+            android:text="@string/part_ask" />
+
+    </LinearLayout>
+
+</ScrollView>

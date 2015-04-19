@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BBQ</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="PART_1CHAT">1</string>
+    <string name="PART_2SECRET">2</string>
+    <string name="PART_3SUROUND">3</string>
+    <string name="PART_4CIRCLE">4</string>
+    <string name="PART_5LOSTFOUND">5</string>
+    <string name="PART_6SALE">6</string>
+    <string name="PART_7ASK">7</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_publish">publish_detail</string>
+    <string name="hint_detail">title</string>
+    <string name="pm_name">pm_name</string>
+    <string name="pm_time">pm_time</string>
+    <string name="pm_detail">pm_detail</string>
+    <string name="reply">回复</string>
+    <string name="btn_delete">删除</string>
+    <string name="hint_reply">回复lz</string>
+    <string name="hint_account">账户</string>
+    <string name="hint_accountEmail">邮箱/经纬账号</string>
+    <string name="hint_pwd">密码</string>
+    <string name="me_name">我</string>
+    <string name="me_message">消息</string>
+    <string name="me_favor">收藏夹</string>
+    <string name="me_submmitted">发表的帖子</string>
+    <string name="me_rplied">回复的帖子</string>
+    <string name="part_chat">闲聊特区</string>
+    <string name="part_secret">USecret</string>
+    <string name="part_suround">理工周边</string>
+    <string name="part_circle">圈子</string>
+    <string name="part_lostfound">失物招领</string>
+    <string name="part_sale">跳蚤市场</string>
+    <string name="part_ask">记者帮你问</string>
+    <string name="set_aboutus">关于我们</string>
+    <string name="set_wifiUpdate">WiFi下自动更新</string>
+    <string name="set_noti">自动推送</string>
+
+</resources>
