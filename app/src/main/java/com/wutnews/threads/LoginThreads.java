@@ -5,6 +5,8 @@ import android.os.Message;
 import android.util.Log;
 
 import com.wutnews.assistance.BaseConnection;
+import com.wutnews.assistance.MyApplication;
+import com.wutnews.bbq.R;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -42,7 +44,7 @@ public class LoginThreads implements Runnable {
 
         try {
             HttpEntity entity = new UrlEncodedFormEntity(formParams, "UTF-8");
-            response = BaseConnection.getInfo("http://bbq.wutnews.com/user/login",entity);
+            response = BaseConnection.getInfo(MyApplication.getAppContext().getString(R.string.Login_url),entity);
             Log.d("response",response);
             JSONObject jsonObject = new JSONObject(response);
             switch(jsonObject.getInt("status")){

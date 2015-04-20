@@ -41,4 +41,11 @@
     <string name="set_wifiUpdate">WiFi下自动更新</string>
     <string name="set_noti">自动推送</string>
 
+    <!-- post url -->
+    <string name="ListAll_url">http://bbq.wutnews.com/post/lists/</string>
+    <string name="Login_url">http://bbq.wutnews.com/user/login</string>
+    <string name="Publish_url">http://bbq.wutnews.com/post/add</string>
+    <string name="ReplyList_url">http://bbq.wutnews.com/post/</string>
+    <string name="Reply_url">http://bbq.wutnews.com/reply/add</string>
+
 </resources>

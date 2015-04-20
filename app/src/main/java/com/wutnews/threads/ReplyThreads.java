@@ -5,6 +5,8 @@ import android.os.Message;
 import android.util.Log;
 
 import com.wutnews.assistance.BaseConnection;
+import com.wutnews.assistance.MyApplication;
+import com.wutnews.bbq.R;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -47,7 +49,7 @@ public class ReplyThreads implements Runnable {
         formParams.add(new BasicNameValuePair("detail", detail));
         try {
             HttpEntity entity = new UrlEncodedFormEntity(formParams, "UTF-8");
-            response = BaseConnection.getInfo("http://bbq.wutnews.com/reply/add",entity);
+            response = BaseConnection.getInfo(MyApplication.getAppContext().getString(R.string.Reply_url),entity);
             Log.e("response",response);
             JSONObject jsonObject = new JSONObject(response);
             int i =jsonObject.getInt("status");

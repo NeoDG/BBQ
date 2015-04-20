@@ -7,6 +7,7 @@ import android.util.Log;
 import com.wutnews.assistance.BaseConnection;
 import com.wutnews.assistance.Cache_List;
 import com.wutnews.assistance.MyApplication;
+import com.wutnews.bbq.R;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
@@ -54,7 +55,7 @@ public class ListThreads implements Runnable {
         formParams.add(new BasicNameValuePair("page", page+""));
         try {
             HttpEntity entity = new UrlEncodedFormEntity(formParams, "UTF-8");
-            response = BaseConnection.getInfo("http://bbq.wutnews.com/post/lists/"+sec_id,entity);
+            response = BaseConnection.getInfo(MyApplication.getAppContext().getString(R.string.ListAll_url)+sec_id,entity);
             Log.e("response",response);
             JSONObject jsonObject = new JSONObject(response);
             response2 = jsonObject.getJSONArray("data").toString();
